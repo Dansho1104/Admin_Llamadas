@@ -27,7 +27,7 @@ function App() {
   }, []);
 
   return (
-    <Router basename="/Admin_Llamadas">
+    <Router>
       <div className="flex h-screen w-screen bg-gray-50 overflow-hidden">
         {/* Sidebar */}
         <Sidebar open={sidebarOpen} setOpen={setSidebarOpen} />
