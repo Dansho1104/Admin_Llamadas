@@ -1,11 +1,66 @@
-# React + Vite
+# Admin Agentes Llamadas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sistema de administración para agentes de llamadas construido con React, Vite y Tailwind CSS.
 
-Currently, two official plugins are available:
+## 🚀 Despliegue en GitHub Pages
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Configuración Automática
+
+Este proyecto está configurado para desplegarse automáticamente en GitHub Pages usando GitHub Actions.
+
+### Pasos para el despliegue:
+
+1. **Subir el código a GitHub:**
+   ```bash
+   git add .
+   git commit -m "Configuración para GitHub Pages"
+   git push origin main
+   ```
+
+2. **Habilitar GitHub Pages:**
+   - Ve a tu repositorio en GitHub
+   - Navega a Settings > Pages
+   - En "Source", selecciona "GitHub Actions"
+   - El workflow se ejecutará automáticamente
+
+3. **Despliegue manual (opcional):**
+   ```bash
+   npm run deploy
+   ```
+
+### 🔧 Scripts disponibles
+
+- `npm run dev` - Servidor de desarrollo
+- `npm run build` - Construir para producción
+- `npm run preview` - Vista previa de la build
+- `npm run deploy` - Desplegar a GitHub Pages
+- `npm run lint` - Ejecutar ESLint
+
+### 📁 Estructura del proyecto
+
+```
+src/
+├── components/     # Componentes reutilizables
+├── pages/         # Páginas principales
+├── hooks/         # Custom hooks
+├── utils/         # Utilidades
+└── assets/        # Recursos estáticos
+```
+
+### 🛠️ Tecnologías utilizadas
+
+- React 19
+- Vite
+- Tailwind CSS
+- Lucide React (iconos)
+- React Router DOM
+- Recharts
+- Framer Motion
+
+### 🌐 URL del sitio
+
+Una vez desplegado, el sitio estará disponible en:
+`git`
 
 ## Expanding the ESLint configuration
 
