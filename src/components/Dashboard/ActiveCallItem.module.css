@@ -1,0 +1,101 @@
+/* Active Call Item Styles */
+.callItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+}
+
+.callItem:hover {
+  background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+  transform: translateX(4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.agentSection {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+}
+
+.agentIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(59, 130, 246, 0.3);
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  color: #ffffff;
+}
+
+.agentInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.agentName {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+  margin: 0;
+}
+
+.callerNumber {
+  font-size: 13px;
+  color: #6b7280;
+  margin: 0;
+}
+
+.durationSection {
+  text-align: center;
+  min-width: 80px;
+}
+
+.duration {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+  margin: 0 0 2px 0;
+}
+
+.durationLabel {
+  font-size: 12px;
+  color: #6b7280;
+  margin: 0;
+}
+
+.intentSection {
+  text-align: right;
+  min-width: 140px;
+}
+
+.intentBadge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(16, 185, 129, 0.3);
+}
+
+.intentLabel {
+  font-size: 12px;
+  color: #6b7280;
+  margin: 4px 0 0 0;
+}

@@ -1,0 +1,54 @@
+/* Navigation Item Styles */
+.navItem {
+  margin-bottom: 4px;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  color: #9ca3af;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.navLink:hover {
+  color: #ffffff;
+  background: rgba(55, 65, 81, 0.6);
+  transform: translateX(2px);
+}
+
+.navLinkActive {
+  color: #ffffff;
+  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.navIcon {
+  width: 18px;
+  height: 18px;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.navText {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.navLinkCollapsed {
+  justify-content: center;
+  padding: 12px;
+  margin: 0 auto 4px;
+  width: 46px;
+  height: 46px;
+}
+
+.navLinkCollapsed .navIcon {
+  margin-right: 0;
+}

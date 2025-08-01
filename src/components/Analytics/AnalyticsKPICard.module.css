@@ -1,0 +1,160 @@
+/* Analytics KPI Card Styles */
+.kpiCard {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.kpiCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #3b82f6, #10b981, #f59e0b, #ef4444);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.kpiCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.kpiCard:hover::before {
+  opacity: 1;
+}
+
+.cardContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.textSection {
+  flex: 1;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #6b7280;
+  margin: 0 0 8px 0;
+}
+
+.value {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 8px 0;
+  line-height: 1;
+}
+
+.changeSection {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.trendIcon {
+  width: 16px;
+  height: 16px;
+}
+
+.trendUp {
+  color: #10b981;
+}
+
+.trendDown {
+  color: #ef4444;
+}
+
+.change {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.changePositive {
+  color: #10b981;
+}
+
+.changeNegative {
+  color: #ef4444;
+}
+
+.changeLabel {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.iconContainer {
+  padding: 12px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconBlue {
+  background-color: #dbeafe;
+}
+
+.iconGreen {
+  background-color: #d1fae5;
+}
+
+.iconPurple {
+  background-color: #e9d5ff;
+}
+
+.iconOrange {
+  background-color: #fed7aa;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.iconBlue .icon {
+  color: #2563eb;
+}
+
+.iconGreen .icon {
+  color: #059669;
+}
+
+.iconPurple .icon {
+  color: #7c3aed;
+}
+
+.iconOrange .icon {
+  color: #ea580c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .kpiCard {
+    padding: 20px;
+  }
+  
+  .value {
+    font-size: 28px;
+  }
+  
+  .cardContent {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  
+  .iconContainer {
+    align-self: flex-end;
+  }
+}

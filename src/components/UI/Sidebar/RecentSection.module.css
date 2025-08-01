@@ -1,0 +1,46 @@
+/* Recent Section Styles */
+.section {
+  padding: 16px 12px;
+  border-top: 1px solid #2a2a2a;
+}
+
+.sectionTitle {
+  padding: 0 16px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+
+.recentList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.recentItem {
+  margin-bottom: 4px;
+}
+
+.recentButton {
+  width: 100%;
+  text-align: left;
+  padding: 10px 16px;
+  color: #9ca3af;
+  background: none;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.recentButton:hover {
+  color: #ffffff;
+  background: rgba(55, 65, 81, 0.6);
+}
